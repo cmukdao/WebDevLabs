@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Edison Dao">   
+        <meta name="description" content="This is a web lab 1 for 67 450">
+        <meta name="keywords" content="Carngie Mellon University, Information Systems">
+        <link rel="stylesheet" href="..\static\style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script defer src="../static/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <title>Edison Dao</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="webname">Edison</h1>
+            <nav id="myTopnav" class="topnav">
+                <a href="index.html">Home</a>
+                <a href="cv.html">CV</a>
+                <a href="contact.html" class="active">Contact Me</a>
+                <a href="fun.html">For Fun</a>
+                <a href="javascript:void(0);" class="icon">
+                    <i class="fa fa-bars" onclick="activeNav()"></i>
+                </a>
+            </nav>
+        </header>
+        <div class="main">
+            <h2>Contact Me</h2>
+            <form action="">
+                <label for="UserName">Your name (required): </label>   
+                <input type="text" name="UserName" id="UserName" required>   
+                <label for="UserEmail">Your email (required): </label>    
+                <input type="email" name="UserEmail" id="UserEmail" required>    
+                <label for="UserText">Your text (required): </label>    
+                <textarea name="UserText" id="UserText" cols="30" rows="10" required></textarea>     
+                <input type="submit" value="Send" onclick="validate()">
+            </form>
+            <p id="ValidateMsg"></p>
+            <table>
+                <tr><th>Contact Method</th><th>Description</th></tr>
+                <tr><td>Email</td><td>kdao@andrew.cmu.edu</td></tr>
+                <tr><td>Phone</td><td>+1 412-689-5508</td></tr>
+                <tr><td>LinkedIn</td><td>
+                    <a href="https://www.linkedin.com/in/edison-dao-b1b5a4221/">LinkedIn Profile</a></td></tr>
+            </table>
+        </div>
+        <footer>
+            <p>Edison Dao &copy; 2024</p>
+        </footer>
+    </body>
+
+</html>
